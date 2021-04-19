@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ludo-matches",
+      "handler": "ludo-matches.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ludo-matches-joined/:userId",
+      "handler": "ludo-matches.findJoined",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ludo-matches/count",
+      "handler": "ludo-matches.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ludo-matches/:id",
+      "handler": "ludo-matches.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ludo-matches",
+      "handler": "ludo-matches.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ludo-matches/:id",
+      "handler": "ludo-matches.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ludo-matches/:id",
+      "handler": "ludo-matches.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

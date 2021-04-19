@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pubg-user-match-maps",
+      "handler": "pubg-user-match-map.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pubg-user-match-maps/count",
+      "handler": "pubg-user-match-map.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pubg-user-match-maps/:id",
+      "handler": "pubg-user-match-map.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pubg-user-match-maps",
+      "handler": "pubg-user-match-map.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pubg-user-match-maps/:id",
+      "handler": "pubg-user-match-map.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pubg-user-match-maps/:id",
+      "handler": "pubg-user-match-map.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

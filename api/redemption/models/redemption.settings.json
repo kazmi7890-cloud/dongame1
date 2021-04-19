@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "redemptions",
+  "info": {
+    "name": "Redemption"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "method": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "top10prizes",
+  "info": {
+    "name": "top10prizes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "prize": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "position": {
+      "type": "integer"
+    }
+  }
+}

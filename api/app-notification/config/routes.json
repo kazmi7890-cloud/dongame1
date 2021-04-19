@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/app-notifications",
+      "handler": "app-notification.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/app-notifications/count",
+      "handler": "app-notification.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/app-notifications/:id",
+      "handler": "app-notification.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/app-notifications",
+      "handler": "app-notification.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/app-notifications/:id",
+      "handler": "app-notification.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/app-notifications/:id",
+      "handler": "app-notification.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

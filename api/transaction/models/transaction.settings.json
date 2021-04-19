@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "Transaction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "wallet": {
+      "model": "wallet"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "remark": {
+      "type": "text"
+    },
+    "position": {
+      "type": "string"
+    },
+    "matchId": {
+      "type": "integer"
+    },
+    "donCoins": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "CREDIT",
+        "DEBIT"
+      ]
+    },
+    "game": {
+      "model": "game"
+    }
+  }
+}

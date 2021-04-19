@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallets",
+  "info": {
+    "name": "Wallet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "balance": {
+      "type": "decimal",
+      "required": true
+    },
+    "transactions": {
+      "collection": "transaction"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "donCoins": {
+      "type": "integer"
+    }
+  }
+}

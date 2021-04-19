@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_matches_ludo_joinings",
+  "info": {
+    "name": "LudoJoining",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "userId": {
+      "type": "integer"
+    }
+  }
+}

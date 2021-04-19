@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/redemptions",
+      "handler": "redemption.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/redemptions/count",
+      "handler": "redemption.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/redemptions/:id",
+      "handler": "redemption.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/redemptions",
+      "handler": "redemption.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/redemptions/:id",
+      "handler": "redemption.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/redemptions/:id",
+      "handler": "redemption.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

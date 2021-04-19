@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gamer-pics",
+      "handler": "gamer-pic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gamer-pics/count",
+      "handler": "gamer-pic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gamer-pics/:id",
+      "handler": "gamer-pic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gamer-pics",
+      "handler": "gamer-pic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gamer-pics/:id",
+      "handler": "gamer-pic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gamer-pics/:id",
+      "handler": "gamer-pic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

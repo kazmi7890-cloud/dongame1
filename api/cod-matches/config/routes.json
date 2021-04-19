@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cod-matches",
+      "handler": "cod-matches.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cod-matches/count",
+      "handler": "cod-matches.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cod-matches/:id",
+      "handler": "cod-matches.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cod-matches",
+      "handler": "cod-matches.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cod-matches/:id",
+      "handler": "cod-matches.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cod-matches/:id",
+      "handler": "cod-matches.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

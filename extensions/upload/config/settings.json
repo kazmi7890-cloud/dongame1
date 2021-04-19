@@ -1,0 +1,11 @@
+{
+    "provider": "aws-s3",
+    "providerOptions": {
+      "accessKeyId": "AKIA5CDBVR235DO56UGN",
+      "secretAccessKey": "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",
+      "region":"us-east-2",
+      "params": {
+        "Bucket": "don-gamers"
+      }
+    }
+  }

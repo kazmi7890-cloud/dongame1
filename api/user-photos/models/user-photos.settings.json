@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_photos",
+  "info": {
+    "name": "Attachment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "userId": {
+      "type": "string"
+    },
+    "entityType": {
+      "type": "enumeration",
+      "enum": [
+        "POST",
+        "PROFILE_PIC"
+      ]
+    },
+    "post": {
+      "via": "attachments",
+      "model": "posts"
+    }
+  }
+}

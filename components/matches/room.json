@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_matches_rooms",
+  "info": {
+    "name": "room",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "roomId": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
+  }
+}

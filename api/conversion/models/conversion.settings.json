@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conversions",
+  "info": {
+    "name": "Conversion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "coins": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "factor": {
+      "type": "string"
+    }
+  }
+}

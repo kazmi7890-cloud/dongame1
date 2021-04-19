@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_user_most_playeds",
+  "info": {
+    "name": "MostPlayed",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "game": {
+      "type": "string"
+    },
+    "playingPerc": {
+      "type": "decimal"
+    }
+  }
+}

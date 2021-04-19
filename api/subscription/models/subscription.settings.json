@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscriptions",
+  "info": {
+    "name": "Subscription"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "game": {
+      "type": "enumeration",
+      "enum": [
+        "PUBG",
+        "LUDO",
+        "COD",
+        "ALL"
+      ]
+    },
+    "remark": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "MONTHLY",
+        "WEEKLY",
+        "YEARLY",
+        "HALFYEARLY"
+      ]
+    },
+    "paypal": {
+      "type": "json"
+    },
+    "nextBillingTime": {
+      "type": "datetime"
+    },
+    "finalPaymentTime": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "subsId": {
+      "type": "string"
+    }
+  }
+}

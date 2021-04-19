@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ludo_matches",
+  "info": {
+    "name": "LudoMatches"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "pos1Prize": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Quick",
+        "Classic",
+        "Master"
+      ]
+    },
+    "startTime": {
+      "type": "datetime"
+    },
+    "game": {
+      "type": "string",
+      "default": "LUDO"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "pos2prize": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "room": {
+      "type": "component",
+      "repeatable": false,
+      "component": "matches.room"
+    },
+    "joinings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "matches.ludo-joining"
+    },
+    "totalPlayers": {
+      "type": "integer"
+    },
+    "pos1Coin": {
+      "type": "string"
+    },
+    "pos2Coin": {
+      "type": "string"
+    }
+  }
+}

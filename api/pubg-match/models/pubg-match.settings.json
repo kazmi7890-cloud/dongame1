@@ -1,0 +1,133 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pubg_matches",
+  "info": {
+    "name": "PubgMatch"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "startTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "perkillPrize": {
+      "type": "string"
+    },
+    "pos1Prize": {
+      "type": "string",
+      "required": false
+    },
+    "pos2Prize": {
+      "type": "string",
+      "required": false
+    },
+    "pos3Prize": {
+      "type": "string",
+      "required": false
+    },
+    "pos4Prize": {
+      "type": "string",
+      "required": false
+    },
+    "pos5Prize": {
+      "type": "string",
+      "required": false
+    },
+    "pos6Prize": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Solo",
+        "Duo",
+        "Squad"
+      ],
+      "required": true
+    },
+    "version": {
+      "type": "enumeration",
+      "enum": [
+        "TPP",
+        "FPP"
+      ],
+      "required": true
+    },
+    "map": {
+      "type": "enumeration",
+      "enum": [
+        "Erangel",
+        "Miramar",
+        "Sanhok",
+        "Arcade",
+        "Vikendi",
+        "WareHouse",
+        "BattleGround"
+      ],
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "totalPlayers": {
+      "type": "integer"
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "Emulator",
+        "Mobile",
+        "PubgLite"
+      ],
+      "required": true
+    },
+    "game": {
+      "type": "string",
+      "default": "PUBG"
+    },
+    "joinings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "matches.pubg-joining"
+    },
+    "room": {
+      "type": "component",
+      "repeatable": false,
+      "component": "matches.room"
+    },
+    "pos1Coin": {
+      "type": "string"
+    },
+    "pos2Coin": {
+      "type": "string"
+    },
+    "pos3Coin": {
+      "type": "string"
+    },
+    "pos4Coin": {
+      "type": "string"
+    },
+    "pos5Coin": {
+      "type": "string"
+    },
+    "pos6Coin": {
+      "type": "string"
+    }
+  }
+}

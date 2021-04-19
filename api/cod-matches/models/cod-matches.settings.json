@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cod_matches",
+  "info": {
+    "name": "CodMatches"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "game": {
+      "type": "string"
+    },
+    "joinings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "matches.codj-oinings"
+    },
+    "pos1Prize": {
+      "type": "string"
+    },
+    "pos1Coin": {
+      "type": "string"
+    },
+    "pos2Prize": {
+      "type": "string"
+    },
+    "pos2Coin": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "datetime"
+    },
+    "totalPlayers": {
+      "type": "integer"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "room": {
+      "type": "component",
+      "repeatable": false,
+      "component": "matches.room"
+    }
+  }
+}

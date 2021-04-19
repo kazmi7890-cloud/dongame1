@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featureds",
+  "info": {
+    "name": "Featured"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

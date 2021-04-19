@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_games_rooms",
+  "info": {
+    "name": "Room",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "roomId": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
+  }
+}

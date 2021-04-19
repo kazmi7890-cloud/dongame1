@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_joining_tests",
+  "info": {
+    "name": "test",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "tes": {
+      "type": "string"
+    }
+  }
+}

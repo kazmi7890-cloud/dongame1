@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fans",
+  "info": {
+    "name": "Fan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "memberSince": {
+      "type": "date"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

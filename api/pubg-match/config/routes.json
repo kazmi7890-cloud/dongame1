@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pubg-matches",
+      "handler": "pubg-match.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pubg-matches-joined/:userId",
+      "handler": "pubg-match.findJoined",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pubg-matches/count",
+      "handler": "pubg-match.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pubg-matches/:id",
+      "handler": "pubg-match.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pubg-matches",
+      "handler": "pubg-match.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pubg-matches/:id",
+      "handler": "pubg-match.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pubg-matches/:id",
+      "handler": "pubg-match.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

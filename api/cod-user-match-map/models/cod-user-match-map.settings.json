@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cod_user_match_maps",
+  "info": {
+    "name": "CodUserMatchMap"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "userId": {
+      "type": "integer"
+    },
+    "matchId": {
+      "type": "integer"
+    }
+  }
+}

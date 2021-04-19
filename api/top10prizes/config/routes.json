@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/top-10-prizes",
+      "handler": "top10prizes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/top-10-prizes/count",
+      "handler": "top10prizes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/top-10-prizes/:id",
+      "handler": "top10prizes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/top-10-prizes",
+      "handler": "top10prizes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/top-10-prizes/:id",
+      "handler": "top10prizes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/top-10-prizes/:id",
+      "handler": "top10prizes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

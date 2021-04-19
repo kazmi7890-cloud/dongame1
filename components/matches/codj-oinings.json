@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_matches_codj_oinings",
+  "info": {
+    "name": "CODJoinings",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    }
+  }
+}

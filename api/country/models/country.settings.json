@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "name": "Country"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "iso": {
+      "type": "string"
+    },
+    "nicename": {
+      "type": "string"
+    },
+    "iso3": {
+      "type": "string"
+    },
+    "numcode": {
+      "type": "string"
+    },
+    "phonecode": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "friends",
+  "info": {
+    "name": "Friend"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "requestId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "ACCEPT",
+        "REJECT",
+        "PENDING"
+      ]
+    },
+    "note": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "friendUser": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_contact_me_contact_me_vias",
+  "info": {
+    "name": "contactMeVia",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "displayLabel": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

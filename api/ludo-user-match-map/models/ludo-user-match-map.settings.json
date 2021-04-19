@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ludo_user_match_maps",
+  "info": {
+    "name": "LudoUserMatchMap"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "userId": {
+      "type": "integer"
+    },
+    "matchId": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "dg",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Dongamers Backoffice",
+  "scripts": {
+    "develop": "strapi develop --watch-admin",
+    "start": "strapi start ",
+    "build": "strapi build --clean",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "<0.20.0",
+    "mysql": "latest",
+    "pm2": "^4.5.6",
+    "strapi": "^3.0.1",
+    "strapi-admin": "3.0.1",
+    "strapi-connector-bookshelf": "3.0.1",
+    "strapi-plugin-content-manager": "3.0.1",
+    "strapi-plugin-content-type-builder": "3.0.1",
+    "strapi-plugin-documentation": "^3.0.1",
+    "strapi-plugin-email": "3.0.1",
+    "strapi-plugin-upload": "3.0.1",
+    "strapi-plugin-users-permissions": "3.0.1",
+    "strapi-provider-email-sendgrid": "^3.4.1",
+    "strapi-provider-upload-aws-s3": "3.0.0",
+    "strapi-utils": "3.0.1"
+  },
+  "author": {
+    "name": "Aruelam Software Solutions Private Limited"
+  },
+  "strapi": {
+    "uuid": false
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

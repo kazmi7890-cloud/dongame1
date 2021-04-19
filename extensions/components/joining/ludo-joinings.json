@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_joining_ludo_joinings",
+  "info": {
+    "name": "LudoJoinings",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "rank": {
+      "type": "integer"
+    }
+  }
+}

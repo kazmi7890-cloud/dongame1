@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_notifications",
+  "info": {
+    "name": "AppNotification"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "data": {
+      "type": "json"
+    },
+    "default": {
+      "type": "boolean"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "totalPlayers": {
+      "type": "integer"
+    }
+  }
+}

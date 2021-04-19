@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_matches_pubg_joinings",
+  "info": {
+    "name": "PubgJoining",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "kills": {
+      "type": "integer"
+    },
+    "rank": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_post_comments",
+  "info": {
+    "name": "Comment",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "msg": {
+      "type": "string"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

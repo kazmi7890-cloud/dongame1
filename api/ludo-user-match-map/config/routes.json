@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ludo-user-match-maps",
+      "handler": "ludo-user-match-map.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ludo-user-match-maps/count",
+      "handler": "ludo-user-match-map.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ludo-user-match-maps/:id",
+      "handler": "ludo-user-match-map.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ludo-user-match-maps",
+      "handler": "ludo-user-match-map.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ludo-user-match-maps/:id",
+      "handler": "ludo-user-match-map.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ludo-user-match-maps/:id",
+      "handler": "ludo-user-match-map.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

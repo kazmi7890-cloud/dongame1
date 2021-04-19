@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "post.comment"
+    },
+    "likes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "post.like"
+    },
+    "attachments": {
+      "collection": "user-photos",
+      "via": "post"
+    }
+  }
+}

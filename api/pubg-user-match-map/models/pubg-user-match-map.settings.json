@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pubg_user_match_maps",
+  "info": {
+    "name": "PubgUserMatchMap"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "userId": {
+      "type": "integer"
+    },
+    "matchId": {
+      "type": "integer"
+    }
+  }
+}

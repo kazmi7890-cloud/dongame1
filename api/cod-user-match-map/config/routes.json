@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cod-user-match-maps",
+      "handler": "cod-user-match-map.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cod-user-match-maps/count",
+      "handler": "cod-user-match-map.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cod-user-match-maps/:id",
+      "handler": "cod-user-match-map.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cod-user-match-maps",
+      "handler": "cod-user-match-map.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cod-user-match-maps/:id",
+      "handler": "cod-user-match-map.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cod-user-match-maps/:id",
+      "handler": "cod-user-match-map.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_games_games",
+  "info": {
+    "name": "games",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
